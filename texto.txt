@@ -1,1 +1,5 @@
-TESTANDO A FUNÇÃO OPEN()
+Wikipédia é uma enciclopédia livre de amplo escopo que está a ser construída por milhares de colaboradores de todas as partes do mundo. 
+Este é um site baseado no conceito de wiki wiki, o que significa que
+qualquer internauta, inclusive você, pode editar o conteúdo de quase todos 
+os artigos acionando o link "Editar" (nas abas de conteúdo) que é mostrado em quase todas as páginas do site. 
+Em outras palavras, nós formamos a Wikipédia.
