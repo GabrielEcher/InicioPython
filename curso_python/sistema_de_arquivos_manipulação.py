@@ -33,8 +33,56 @@ os.makedirs('templates//geek//university')
 # Renomear arquivos e diretórios
 
 os.rename('templates', 'templates2')
+
+# DELETE - Ao deletarmos um arquivo ou diretório, ele não vai para a lixeira, eles somem.
+
+os.remove('arquivo-teste3.txt') # Serve para remover arquivos
+
+# Se eu usar o remove para remover diretórios teremos IsDirectoryError
+
+# Removendo diretórios
+
+os.rmdir('templates2') # REMOVENDO DIRETÓRIOS VAZIOS
+
+# Podemos remover uma arvore de diretórios vazios
+
+os.removedirs('templates2//geek//university')
+
+# Para enviarmos arquivos para a lixeira é preciso instalar uma bibilioteca externa, para podermos utilizar uma lixeira
+
+from send2trash import send2trash
+
+send2trash('novo.txt')
+
+import tempfile
+
+# Trabalhando com arquivos e diretórios temporários
+
+# Criando um diretório temporario
+
+with tempfile.TemporaryDirectory() as tmp:
+    print(f'Criei o diretório temporário em {tmp}')
+    with open(os.path.join(tmp, 'arquivo_temporario.txt'), 'w') as arquivo:
+        arquivo.write('Gabriel\n')
+    input() # Segura o código para o arquivo não ser excluído
+
+# Criando uma arquivo temporario
+
+with tempfile.TemporaryFile() as tmpf:
+    tmpf.write(b'gabriel') # o B tranforma a string em bits
+    tmpf.seek(0)
+    print(tmpf.read())
 """
 import os
+import tempfile
+
+
+
+
+
+
+
+
 
 
 
