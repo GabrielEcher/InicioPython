@@ -32,3 +32,6 @@ if ativo is False:
     print("Você precisa ativar sua conta(cheque seu e-mail)")
 else:
     print("Bem-vindo usuário!")
+
+
+
