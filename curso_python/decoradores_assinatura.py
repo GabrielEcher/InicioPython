@@ -1,0 +1,4 @@
+"""
+Decorators com diferentes assinaturas
+"""
+
