@@ -12,4 +12,46 @@ Salário Bruto acima de 2500 - desconto de 20% Imprima na tela as informações,
         Total de descontos              : R$  165,00
         Salário Liquido                 : R$  935,00
 """
+print("CÁLCULO DA FOLHA DE PAGAMENTO")
 
+salario_bruto = float(input("Informe seu salário: "))
+
+def descontos(salario_bruto):
+    
+    if salario_bruto <= 900:
+       
+       inss = salario_bruto * (8 / 100)
+       fgts = salario_bruto * (10 / 100)
+       total_descontos = inss + fgts
+       salario_liquido = salario_bruto - total_descontos
+       print(f"SALÁRIO BRUTO: R${salario_bruto}\nIR: isento\nINSS (10%): R${inss}\nFGTS (11%): R${fgts}\nTOTAL DE DESCONTOS: {total_descontos}\nSALÁRIO LIQUIDO: R${salario_liquido}")
+
+       
+    elif salario_bruto > 900 or salario_bruto <= 1500:
+       
+       ir = salario_bruto * (5 / 100)
+       inss = salario_bruto * (8 / 100)
+       fgts = salario_bruto * (10 / 100)
+       total_descontos = inss + fgts + ir
+       salario_liquido = salario_bruto - total_descontos
+       print(f"SALÁRIO BRUTO: R${salario_bruto}\nIR: R${ir}\nINSS (10%): R${inss}\nFGTS (11%): R${fgts}\nTOTAL DE DESCONTOS: {total_descontos}\nSALÁRIO LIQUIDO: R${salario_liquido}")
+        
+    elif salario_bruto > 1500 or salario_bruto <= 2500:
+        
+       ir = salario_bruto * (10 / 100)
+       inss = salario_bruto * (8 / 100)
+       fgts = salario_bruto * (10 / 100)
+       total_descontos = inss + fgts + ir
+       salario_liquido = salario_bruto - total_descontos
+       print(f"SALÁRIO BRUTO: R${salario_bruto}\nIR: R${ir}\nINSS (10%): R${inss}\nFGTS (11%): R${fgts}\nTOTAL DE DESCONTOS: {total_descontos}\nSALÁRIO LIQUIDO: R${salario_liquido}")
+
+    elif salario_bruto > 2500:
+       
+       ir = salario_bruto * (20 / 100)
+       inss = salario_bruto * (8 / 100)
+       fgts = salario_bruto * (10 / 100)
+       total_descontos = inss + fgts + ir
+       salario_liquido = salario_bruto - total_descontos
+       print(f"SALÁRIO BRUTO: R${salario_bruto}\nIR: R${ir}\nINSS (10%): R${inss}\nFGTS (11%): R${fgts}\nTOTAL DE DESCONTOS: {total_descontos}\nSALÁRIO LIQUIDO: R${salario_liquido}")
+
+descontos(salario_bruto)
