@@ -15,7 +15,7 @@ while True:
     opcao = input('[i]nserir [a]pagar [l]istar: ')
 
     if opcao == 'i':
-        os.system('clear')
+        os.system('cls')
         valor = input('Valor: ')
         lista.append(valor)
     elif opcao == 'a':
