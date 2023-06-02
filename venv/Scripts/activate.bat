@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\gabriel\PythonUdemyGit\venv
+set VIRTUAL_ENV=C:\Users\gabriel\CURSO PYTHON\InicioPython\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
